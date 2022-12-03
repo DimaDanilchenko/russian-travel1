@@ -15,14 +15,14 @@
     box-sizing: border-box;
 }
 .page{
-    width: 1280px;
-    border: solid red 1px;
+    width: calc(100% - 2*48px);
 }
 .header{
     display: flex;
     flex-direction: row;
     margin-top: 28px;
     justify-content: space-between;
+    min-width: 600px;
 }
 .header__logo{
     width: 176px;
@@ -62,7 +62,6 @@
     flex-direction: column;
     align-items: center;
     width: 984;
-    border: solid red 1px;
 }
 .lead__title{
     font-family: Inter;
@@ -161,7 +160,6 @@
 }
 .place{
     margin-top: 80px;
-    border: solid red 1px;
     max-width: 984px;
     width: 100%;
     display: grid;
@@ -218,12 +216,29 @@
 }
 .cover{
     margin-top: 92px;
+    width: 100%;
+ /*   width: calc(100% - 2*48px); */
+    display: flex;
+    flex-direction: column;
+    align-self: center;
 }
 .cover__background{
-    background-image: src(../images/__overlay.png);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-decoration: none;
+    width: 100%;
+    min-height: 740px;
+    background-image: url(../images/__background.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    background-color: #aaa;
+
 }
 .cover__title{
-    max-width: 560px;
+    margin-top: 245px;
+    width: 560px;
     font-family: Inter;
     font-size: 72px;
     font-weight: 900;
@@ -234,6 +249,7 @@
 
 }
 .cover__subtitle{
+    margin-top: 32px;
     font-family: Inter;
     font-size: 18px;
     font-weight: 400;
@@ -241,4 +257,35 @@
     letter-spacing: 0em;
     text-align: center;
     color: #fff;
+}
+.footer{
+    margin-top: 92px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+.footer__links{
+    display: flex;
+    flex-direction: row;
+    list-style-type: none;
+    padding: 0;
+
+}
+.footer__link{
+    color: #fff;
+    font-family: Inter;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 18px;
+    letter-spacing: 0em;
+    margin-right: 10px;
+}
+.footer__copyright{
+    font-family: Inter;
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 16px;
+    letter-spacing: 0em;
+    color: #fff;
+    align-self: center;
 }
