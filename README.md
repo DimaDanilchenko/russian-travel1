@@ -21,3 +21,5 @@
 Не забудьте [оптимизировать картинки](https://tinypng.com/), чтобы ваш сайт загружался быстрее.
 
 Удачи!
+
+Проект https://dimadanilchenko.github.io/russian-travel1/
