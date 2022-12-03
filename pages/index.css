@@ -1,291 +1,49 @@
 @import url(../vendor/normalize.css);
-/*
-@font-face {
-    src: url() format(),
-         url() format();
-}
-*/
 
-/* Header */
+@import url(../fonts/fonts.css);
+@import url(../blocks/body/body.css);
+@import url(../blocks/page/page.css);
 
-.body{
-    background-color: #2a2c2f;
-    display: flex;
-    justify-content: center;
-    box-sizing: border-box;
-}
-.page{
-    width: calc(100% - 2*48px);
-}
-.header{
-    display: flex;
-    flex-direction: row;
-    margin-top: 28px;
-    justify-content: space-between;
-    min-width: 600px;
-}
-.header__logo{
-    width: 176px;
-    height: 52px;
-}
-.header__lang{
-    display: flex;
-    flex-direction: row;
-    margin-right: 48px;
-    margin-top: 18px;
-}
-.header__lang-link{
-    font-family: Inter;
-    font-size: 24px;
-    font-weight: 400;
-    line-height: 28px;
-    letter-spacing: 0em;
-    text-decoration: none;
-    color: #fff;
-    margin-right: 18px;
-    width: 30px;
-    height: 28px;
-}
-.header__lang-link1{
-    text-decoration: underline;
-}
-.header__lang-link:last-child{
-    margin-right: 0px;
-}
-.content{
-    display: flex;
-    margin-top: 56px;
-    flex-direction: column;
-}
-.lead{
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    width: 984;
-}
-.lead__title{
-    font-family: Inter;
-    font-size: 96px;
-    font-weight: 900;
-    line-height: 100px;
-    letter-spacing: 0em;
-    text-align: center;
-    color: #fff;
-    width: 720px;
-}
-.lead__subtitle{
-    margin-top: 32px;
-    text-align: center;
-    font-family: Inter;
-    font-size: 30px;
-    font-weight: 400;
-    line-height: 36px;
-    letter-spacing: 0em;
-    color: #fff;
-}
-.lead__image{
-    margin-top: 64px;
-    width: 984px;
-    height: 615px;
-}
-.lead__caption{
-    margin-top: 8px;
-    font-family: Inter;
-    font-size: 10px;
-    font-weight: 400;
-    line-height: 14px;
-    letter-spacing: 1.5px;
-    color: #fff;
-    align-self: flex-start;
-    margin-left: 148px;
-}
-.intro{
-    margin-top: 92px;
-    display: flex;
-    flex-direction: column;
+@import url(../blocks/header/header.css);
+@import url(../blocks/header/__logo/header__logo.css);
+@import url(../blocks/header/__lang/header__lang.css);
+@import url(../blocks/header/__lang-link/header__lang-link.css);
+@import url(../blocks/header/__lang-link_active/header__lang-link_active.css);
 
-}
-.intro__title{
-    font-family: Inter;
-    font-size: 54px;
-    font-weight: 900;
-    line-height: 58px;
-    letter-spacing: 0em;
-    color: #fff;
-    margin-left: 148px;
+@import url(../blocks/content/content.css);
 
-}
-.intro__subtitle{
-    margin-top: 40px;
-    font-family: Inter;
-    font-size: 16px;
-    font-weight: 400;
-    line-height: 26px;
-    letter-spacing: 0em;
-    color: #fff;
-    max-width: 690px;
-    margin-left: 148px;
+@import url(../blocks/lead/lead.css);
+@import url(../blocks/lead/__title/lead__title.css);
+@import url(../blocks/lead/__subtitle/lead__subtitle.css);
+@import url(../blocks/lead/__image/lead__image.css);
+@import url(../blocks/lead/__caption/lead__caption.css);
 
-}
-.intro__list{
-    margin-top: 33px;
-    margin-left: 148px;
-    font-family: Inter;
-    font-size: 12px;
-    font-weight: 400;
-    line-height: 18px;
-    letter-spacing: 0em;
-    text-align: left;
-    margin-left: 148px;
-    color: #fff;
-    text-decoration: none;
-    list-style-type: none;
-    padding: 0;;
-}
-.photo-grid{
-    margin-top: 92px;
-    margin-left: 48px;
-    display: grid;
-    grid-template-columns: repeat(auto-fit, 284px);
-    gap: 16px;
-}
-.photo-grid__item{
-    
-}
-.places{
-    margin-top: 92px;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-}
-.place{
-    margin-top: 80px;
-    max-width: 984px;
-    width: 100%;
-    display: grid;
-    grid-template-columns: 460px 484px;
-    gap: 40px;
-}
-.place:first-child{
-    margin-top: 0;
-}
-.place__title{
-    font-family: Inter;
-    font-size: 72px;
-    font-weight: 900;
-    line-height: 76px;
-    letter-spacing: 0em;
-    color: #fff;
-    margin-top: auto;
-}
-.place__image{
+@import url(../blocks/intro//intro.css);
+@import url(../blocks/intro/__title/intro__title.css);
+@import url(../blocks/intro/__subtitle/intro__subtitle.css);
+@import url(../blocks/intro/__list/intro__list.css);
 
-}
-.place__website{
-    display: flex;
-    flex-direction: column;
-    justify-content: end;
-}
-.place__website_url-heading{
-    font-family: Inter;
-    font-size: 12px;
-    font-weight: 400;
-    line-height: 12px;
-    letter-spacing: 2px;
-    color: #aaa;
-    display: flex;
-}
-.place__website_link{
-    font-family: Inter;
-    font-size: 18px;
-    font-weight: 400;
-    line-height: 22px;
-    letter-spacing: 0em;
-    color: #fff;
-}
-.place__paragraph{
-    font-family: Inter;
-    font-size: 18px;
-    font-weight: 400;
-    line-height: 29px;
-    letter-spacing: 0em;
-    color: #fff;
-}
-.place__paragraph_bottom{
-    margin-top: 26px;
-}
-.cover{
-    margin-top: 92px;
-    width: 100%;
- /*   width: calc(100% - 2*48px); */
-    display: flex;
-    flex-direction: column;
-    align-self: center;
-}
-.cover__background{
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    text-decoration: none;
-    width: 100%;
-    min-height: 740px;
-    background-image: url(../images/__background.png);
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-position: center;
-    background-color: #aaa;
+@import url(../blocks/photo-grid/photo-grid.css);
+@import url(../blocks/photo-grid/__item/photo-grid__item.css);
 
-}
-.cover__title{
-    margin-top: 245px;
-    width: 560px;
-    font-family: Inter;
-    font-size: 72px;
-    font-weight: 900;
-    line-height: 76px;
-    letter-spacing: 0em;
-    text-align: center;
-    color: #fff;
+@import url(../blocks/places/places.css);
 
-}
-.cover__subtitle{
-    margin-top: 32px;
-    font-family: Inter;
-    font-size: 18px;
-    font-weight: 400;
-    line-height: 22px;
-    letter-spacing: 0em;
-    text-align: center;
-    color: #fff;
-}
-.footer{
-    margin-top: 92px;
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-}
-.footer__links{
-    display: flex;
-    flex-direction: row;
-    list-style-type: none;
-    padding: 0;
+@import url(../blocks/place/place.css);
+@import url(../blocks/place/__title/place__title.css);
+@import url(../blocks/place/__website/place__website.css);
+@import url(../blocks/place/__website/_link/place__website_link.css);
+@import url(../blocks/place/__website/_url-heading/place__website_url-heading.css);
+@import url(../blocks/place/__paragraph/place__paragraph.css);
+@import url(../blocks/place/__paragraph/__paragraph_bottom/place__paragraph_bottom.css);
+@import url(../blocks/place/__paragraph/__paragraph_up/place__paragraph_up.css);
+@import url(../blocks/place/__image/place__image.css);
 
-}
-.footer__link{
-    color: #fff;
-    font-family: Inter;
-    font-size: 16px;
-    font-weight: 400;
-    line-height: 18px;
-    letter-spacing: 0em;
-    margin-right: 10px;
-}
-.footer__copyright{
-    font-family: Inter;
-    font-size: 14px;
-    font-weight: 400;
-    line-height: 16px;
-    letter-spacing: 0em;
-    color: #fff;
-    align-self: center;
-}
+@import url(../blocks/cover/cover.css);
+@import url(../blocks/cover/__title/cover__title.css);
+@import url(../blocks/cover/__subtitle/cover__subtitle.css);
+@import url(../blocks/cover/__background/cover__background.css);
+
+@import url(../blocks/footer/footer.css);
+@import url(../blocks/footer/__links/footer__links.css);
+@import url(../blocks/footer/__link/footer__link.css);
+@import url(../blocks/footer/__copyright/footer__copyright.css);
