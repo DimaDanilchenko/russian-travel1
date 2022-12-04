@@ -8,3 +8,15 @@
         width: calc(100% - 2*48px);
     }
 }
+
+@media screen and (max-width: 425px) {
+    .places {
+        width: calc(100% - 2*48px);
+    }
+}
+
+@media screen and (max-width: 320px) {
+    .places {
+        width: 100%;
+    }
+}

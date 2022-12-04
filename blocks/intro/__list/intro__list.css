@@ -1,6 +1,5 @@
 .intro__list {
     margin-top: 33px;
-    width: calc(100% - 2*100px);
     font-family: 'Inter';
     font-style: normal;
     font-weight: 700;
@@ -11,6 +10,4 @@
     text-decoration: none;
     list-style-type: none;
     padding: 0;
-
-
 }
