@@ -13,6 +13,16 @@
         min-width: 352px;
     }
 }
+@media screen and (max-width: 380px) {
+    .photo-grid__item{
+        min-width: 300px;
+    }
+}
+@media screen and (max-width: 355px) {
+    .photo-grid__item{
+        min-width: 292px;
+    }
+}
 
 @media screen and (max-width: 320px) {
     .photo-grid__item{
