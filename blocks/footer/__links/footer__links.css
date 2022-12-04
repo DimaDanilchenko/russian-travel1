@@ -4,6 +4,9 @@
     list-style-type: none;
     padding: 0;
     margin: 0;
-    margin-bottom: 24px;
     text-decoration: none;
+}
+
+.footer__links:last-child{
+    margin-right: 0;
 }
